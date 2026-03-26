@@ -50,6 +50,7 @@ class Student{
     }
 
     public void StudentInfo(){
+        System.out.println("-------------- Student Info ------------");
         System.out.println("Name: "+name);
         System.out.println("ID: "+id);
         System.out.println("GPA: "+gpa);
@@ -71,6 +72,7 @@ public class Main {
         String id = input.nextLine();
         System.out.println("Enter GPA : ");
         double gpa = input.nextDouble();
+        input.nextLine();
 
         Student student=new Student(name,id,gpa);
         while (student.getRemainingHours() >=3 ){
